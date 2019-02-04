@@ -34,6 +34,7 @@ public class Swap<T> {
         T variable = arr[i1];
         arr[i1] = arr[i2];
         arr[i2] = variable;
+        System.out.println(arr);
 
 
     }
@@ -46,7 +47,7 @@ class SwapTest {
         Integer[] intArr = {1, 4, 5, 6};
         Swap<Integer> swap = new Swap<Integer>(intArr, 1, 2);
         swap.arraySwap();
-//        swap.randomArrSwap();
+        swap.randomArrSwap();
 
     }
 }
